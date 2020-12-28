@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<title>HighCraft Server - Inicio</title>
+<meta charset="utf-8" />
+
+<style>
+    @font-face {
+        font-family: "Console";
+        src: url('./custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
+    }
+
+    @font-face {
+        font-family: "Mojangles";
+        src: url('./custom-fonts/minecraft.ttf');
+    }
+
+    .button-invite {
+        margin: auto;
+        border: 3px solid #ffffff;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: #00000000;
+        outline: unset;
+        font-size: 1cm;
+        font-family: Console;
+        transition: linear 0.25s;
+        color: white
+    }
+
+    .button-invite:hover {
+        background-color: #ffffff;
+        color: #1c1d27;
+        border-color:  transparent;
+    }
+
+    .button-invite:hover:active {
+        background-color: transparent;
+        color: white;
+        border-color:  #1c1d27;
+    }
+</style>
+
+<html style="background-color: #1c1d27;">
+    <p style="font-family: Console; font-size: 1.75cm; color: white; text-align: center;">Bienvenido a HighCraft</p>
+    <div style="align-content: center; text-align: center">
+       <a href="https://discord.gg/3XytExR7Nk">
+            <button type="button" class=button-invite>Servidor de Discord</button>
+       </a>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <iframe
+        src="https://discord.com/widget?id=790598163135463484&theme=dark"
+        width="75%"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    <div style="padding: 10px; color: white; margin: auto; width: 70%; min-height: 250px; align-self: center; text-align: center; font-family: Mojangles; font-size: 1cm;">
+        <p><b draggable="true">IP:</b> HighCraft777.aternos.me</p>
+        <p draggable="true"><b draggable="true">Tipo:</b> Java</p>
+        <p id=stus></p>
+        <p id=version></p>
+        <p id=nply></p>
+        <p id=motd></p>
+        <br>
+        <button type="button" onclick="location.reload()" class="button-invite">Volver a cargar</button>
+        <script src="./js/mc-api.js"></script>
+        <br>
+        <br>
+    </div>
+</html>
